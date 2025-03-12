@@ -21,6 +21,8 @@ a {
 header {
     background-color: #184D5F;
     background-image: url(../images/back.png);
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 .navbar {
@@ -218,4 +220,110 @@ nav ul li a:hover {
     line-height: 22.4px;
     letter-spacing: 0%;
     color: rgba(8, 84, 108, 1);
+}
+
+@media (max-width: 1381px) {
+    .about {
+        left: 600px;
+        position: absolute;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        max-width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .hero-left h1 {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-left {
+        max-width: 100%;
+    }
+
+    .hero-left h2 {
+        margin-top: 10px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-left p {
+        text-align: center;
+        align-items: center;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bs {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .static {
+        margin-top: 70px;
+        padding: 50px 150px;
+        width: 1000px;
+        height: 250px;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .static h2 {
+        font-size: 20px;
+        margin-bottom: 51px;
+    }
+
+    .stat h3 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .stat p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+    nav {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .static {
+        width: 750px;
+        padding: 50px 20px;
+        height: 300px;
+    }
+
+    .statics{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .stat {
+        width: 50%;
+    }
+
+    .stati {
+        margin-top: 20px;
+    }
 }
